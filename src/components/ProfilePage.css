@@ -1,0 +1,78 @@
+.container {
+    margin-top: 20px;
+  }
+  
+  .title-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(90deg, #99bef1, #beb8ff, #e7f0fd);
+    background-size: 200% auto;
+    animation: fadeLoop 3s linear infinite;
+  }
+  
+  .title {
+    font-size: 36px;
+    font-weight: bold;
+    color: #1c1c1c;
+    text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.2);
+    overflow: hidden; /* Ensures the typewriter effect */
+    animation: typingEffect 2s steps(30) 1s 1 normal both,
+               blinkCursor 500ms steps(30) infinite normal;
+    white-space: nowrap; /* Prevents line breaks */
+    margin: 0 auto; /* Center alignment */
+  }
+  
+  .form-container {
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+  }
+  
+  .form-label {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .form-container .mb-3 {
+    margin-bottom: 15px;
+  }
+  
+  @keyframes fadeLoop {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  @keyframes typingEffect {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  
+  @keyframes blinkCursor {
+    from, to {
+      border-right-color: transparent;
+    }
+    50% {
+      border-right-color: #333;
+    }
+  }
+  
+  .value-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .value-container span {
+    margin-left: 10px;
+  }

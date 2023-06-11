@@ -1,0 +1,71 @@
+@keyframes fadeLoop {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  @keyframes typewriter {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+
+  body {
+    background-color: #90d1ea;
+  }
+  
+  .container {
+    margin-top: 20px;
+  }
+  
+  .title-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background: linear-gradient(90deg, #13386c, #f8f9fa, #e7f0fd);
+    background-size: 200% auto;
+    animation: fadeLoop 3s linear infinite;
+    padding: 20px;
+    margin-bottom: 20px;
+    
+  }
+  
+  .title {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typewriter 3s steps(40) 1s infinite;
+  }
+  
+  .form-container {
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+  }
+  
+  .form-label {
+    font-weight: bold;
+  }
+  
+  .text-danger {
+    color: #dc3545;
+    margin-top: 5px;
+    font-size: 14px;
+  }
+  
+  .btn-primary {
+    margin-top: 10px;
+  }
+  
